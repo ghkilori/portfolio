@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Кибербруталистичное портфолио веб-разработчика: разработка, маркетинг, конверсия."
+    />
+    <title>Nikita // Cyber Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="noise"></div>
+    <div class="bg-glow bg-glow--one" data-parallax="0.04"></div>
+    <div class="bg-glow bg-glow--two" data-parallax="-0.03"></div>
+    <div class="wire-decor wire-decor--hero" data-parallax="0.018" aria-hidden="true"></div>
+    <div class="wire-decor wire-decor--services" data-parallax="-0.014" aria-hidden="true"></div>
+    <div class="wire-decor wire-decor--experience" data-parallax="0.012" aria-hidden="true"></div>
+    <div class="wire-decor wire-decor--contact" data-parallax="-0.016" aria-hidden="true"></div>
+
+    <header class="header container">
+      <a href="#hero" class="logo">NIKITA<span>_GHOSTLY</span></a>
+      <nav class="nav">
+        <a href="#about">Профиль</a>
+        <a href="#services">Сервисы</a>
+        <a href="#portfolio">Кейсы</a>
+        <a href="#experience">Опыт</a>
+        <a href="#contact">Контакт</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#contact" class="btn btn--small">Запрос</a>
+    </header>
+
+    <aside class="mobile-menu" id="mobileMenu">
+      <a href="#about">Профиль</a>
+      <a href="#services">Сервисы</a>
+      <a href="#portfolio">Кейсы</a>
+      <a href="#experience">Опыт</a>
+      <a href="#skills">Скиллы</a>
+      <a href="#contact">Контакт</a>
+    </aside>
+
+    <main>
+      <section id="hero" class="hero container reveal">
+        <div class="hero__content" data-parallax="0.012">
+          <p class="eyebrow">WEB DEVELOPER / DIGITAL SPECIALIST</p>
+          <h1>ДЕЛАЮ САЙТЫ, КОТОРЫЕ ПРИВОДЯТ ЛИДЫ.</h1>
+          <p class="hero__text">
+            Разрабатываю и масштабирую сайты под бизнес-задачи. Объединяю разработку,
+            UX и performance-маркетинг в рабочую систему:
+            <strong>трафик → сайт → заявка.</strong>
+          </p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn">Портфолио</a>
+            <a href="#contact" class="btn btn--ghost">Обсудить проект</a>
+          </div>
+          <div class="hero__panel">
+            <p><span>Опыт:</span> 3+ года в digital-агентстве</p>
+            <p><span>Роль:</span> Web Dev + Marketing Mindset</p>
+            <p><span>Фокус:</span> Конверсия и ROI</p>
+          </div>
+        </div>
+        <div class="hero__visual" data-parallax="-0.02">
+          <div class="hero-art">
+            <img
+              src="g.png"
+              alt="Фото Никиты в hero блоке"
+              loading="eager"
+            />
+            <div class="hero-art__label hero-art__label--top">DARK MODE / ACTIVE</div>
+            <div class="hero-art__label hero-art__label--bottom">NIKITA KOLYCHEV</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <div class="section__head">
+          <p class="eyebrow">ПРОФИЛЬ</p>
+          <h2>РАЗРАБОТЧИК С МАРКЕТИНГОВЫМ МЫШЛЕНИЕМ</h2>
+        </div>
+        <div class="grid-two">
+          <article class="card">
+            <h3>Что делаю</h3>
+            <p>
+              Запускаю проекты с нуля и усиливаю текущие сайты: структура,
+              прототип, верстка, интеграции, запуск и поддержка.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Как работаю</h3>
+            <p>
+              Держу фокус на метриках: качество трафика, путь пользователя, конверсия
+              формы и стоимость заявки. Использую AI для ускорения production.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section container reveal">
+        <div class="section__head">
+          <p class="eyebrow">СЕРВИСЫ</p>
+          <h2>ПОЛНЫЙ ЦИКЛ ПОД БИЗНЕС-ЦЕЛИ</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>01 / Development</h3>
+            <p>WordPress, MODX, Tilda, кастомная верстка и разработка функционала.</p>
+          </article>
+          <article class="card">
+            <h3>02 / Integrations</h3>
+            <p>CRM, API, формы, калькуляторы, оплаты, аналитика, техническая поддержка.</p>
+          </article>
+          <article class="card">
+            <h3>03 / Growth</h3>
+            <p>Яндекс Директ, UX-оптимизация и рост конверсии на реальном трафике.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section container reveal">
+        <div class="section__head">
+          <p class="eyebrow">КЕЙСЫ</p>
+          <h2>ПРОЕКТЫ, ГДЕ РЕЗУЛЬТАТ ВЫРАЖЕН В ЦИФРАХ</h2>
+        </div>
+        <div class="cards cards--portfolio" id="portfolioCards">
+          <article class="card project-card" data-parallax="0.02">
+            <img
+              class="project-card__image"
+              src="./images/coneselima.png"
+              alt="Лендинг под лидогенерацию"
+              loading="lazy"
+            />
+            <h3>ЛЕНДИНГ "CONESELIMA</h3>
+            <p>Лендинг под рекламу в яндекс-директ</p>
+            <button
+              class="btn btn--ghost js-open-case"
+              type="button"
+              data-site="https://coneselima.ru"
+            >
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card" data-parallax="0.026">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1200&q=80"
+              alt="ЛЕНДИНГ МОЙ БИЗНЕС"
+              loading="lazy"
+            />
+            <h3>ЛЕНДИНГ "МОЙ БИЗНЕС"</h3>
+            <p>Лендинг под рекламу в яндекс-директ</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://бизнесфорум35.рф">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card" data-parallax="0.015">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+              alt="ИНТЕРНЕТ-МАГАЗИН МЕБЕЛЬНЫЙ ЩИТ"
+              loading="lazy"
+            />
+            <h3>ИНТЕРНЕТ-МАГАЗИН "МЕБЕЛЬНЫЙ ЩИТ"</h3>
+            <p>Интернет-магазин с возможностью расчета стоимости материалов</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://mebelniy-shchity.ru/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.02">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+              alt="Лендинг Имущество с торгов по цене ниже рыночной"
+              loading="lazy"
+            />
+            <h3>Лендинг "Имущество с торгов по цене ниже рыночной"</h3>
+            <p>Лендинг под рекламу в яндекс-директ</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://dityatkin-invest.ru/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.017">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+              alt="Сервисный сайт с калькулятором"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "INTERNI QUATRO"</h3>
+            <p>Информационный многостраничный сайт</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://interniquattro.ru/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.023">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
+              alt="Многостраничный корпоративный проект"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "СЕВЕР-СЕРВИС"</h3>
+            <p>Информационный многостраничный сайт</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://sever-service.ru/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.019">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+              alt="Сайт IT-компании"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "ПТ-Инжиниринг"</h3>
+            <p>Информационный многостраничный сайт</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://engineer-pt.com/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.021">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+              alt="Лендинг SaaS-продукта"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "СТ-ТОПЛИВО"</h3>
+            <p>Информационный многостраничный сайт</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://ст-топливо.рф/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.016">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=1200&q=80"
+              alt="Сайт медицинской клиники"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "LOGOLEND"</h3>
+            <p>Сайт с системой подписок на интерактивные игры</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://logolend.online/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.024">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+              alt="Сайт девелоперского проекта"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "FADOS"</h3>
+            <p>Лендинг под рекламу в яндекс-директ</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://fados.ru/">
+              Открыть кейс
+            </button>
+          </article>
+          <article class="card project-card is-hidden" data-parallax="0.018">
+            <img
+              class="project-card__image"
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+              alt="E-commerce сайт"
+              loading="lazy"
+            />
+            <h3>Сайт для компании "МК АЛЬЯНС"</h3>
+            <p>Информационный многостраничный сайт</p>
+            <button class="btn btn--ghost js-open-case" type="button" data-site="https://альянс-мебель-сочи.рф/">
+              Открыть кейс
+            </button>
+          </article>
+        </div>
+        <div class="portfolio-more">
+          <button class="btn" type="button" id="portfolioLoadMore">Показать еще</button>
+        </div>
+      </section>
+
+      <section id="experience" class="section container reveal">
+        <div class="section__head">
+          <p class="eyebrow">ОПЫТ</p>
+          <h2>BLACKMEDIA / МАЙ 2023 — АПРЕЛЬ 2026</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="timeline__item">
+            <p class="timeline__date">Web Developer / Digital Specialist</p>
+            <ul>
+              <li>Сайты под ключ на WordPress, MODX, Tilda</li>
+              <li>Кастомизация UX/UI с упором на конверсию</li>
+              <li>Интеграции CRM/API и онлайн-оплат</li>
+              <li>Запуск рекламы: Яндекс Директ и VK</li>
+              <li>Работа с Яндекс Метрикой и Google Analytics</li>
+              <li>Дизайн-макеты и прототипирование в Figma</li>
+            </ul>
+          </article>
+          <aside class="experience-side">
+            <div class="experience-kpis">
+              <div><span>3 года</span><p>в digital-агентстве</p></div>
+              <div><span>Full-cycle</span><p>от структуры до запуска</p></div>
+              <div><span>ROI focus</span><p>реклама + сайт + аналитика</p></div>
+            </div>
+            <div class="experience-note">
+              <p class="experience-note__title">Что особенно усиливаю в проектах</p>
+              <ul>
+                <li>Рост конверсии за счет UX-пути и структуры страницы</li>
+                <li>Снижение стоимости заявки через тех. и рекламную оптимизацию</li>
+                <li>Стабильная поддержка после релиза и быстрые итерации</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <div class="section__head">
+          <p class="eyebrow">СКИЛЛЫ</p>
+          <h2>ТЕХНОЛОГИИ И ИНСТРУМЕНТЫ</h2>
+        </div>
+        <div class="chips">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span>
+          <span>MySQL</span><span>WordPress</span><span>MODX</span><span>Tilda</span>
+          <span>Elementor</span><span>Figma</span><span>Яндекс Директ</span>
+          <span>Яндекс Метрика</span><span>Google Analytics</span><span>AI Tools</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <div class="contact">
+          <p class="eyebrow">КОНТАКТ</p>
+          <h2>ГОТОВ ВКЛЮЧИТЬСЯ В ТВОЙ ПРОЕКТ</h2>
+          <p>
+            Нужен современный сайт с упором на заявки и рост? Напиши, и соберем
+            решение под твои задачи и сроки.
+          </p>
+          <div class="contact__actions">
+            <a class="btn" href="mailto:hello@example.com">nikita.2004868@gmail.com</a>
+            <a class="btn btn--ghost" href="https://t.me/@dexkilgh" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> NIKITA_GHOSTLY / WEB DEV PORTFOLIO</p>
+    </footer>
+
+    <div class="case-modal" id="caseModal" aria-hidden="true">
+      <div class="case-modal__backdrop" data-close-case></div>
+      <section class="case-modal__dialog" role="dialog" aria-modal="true" aria-label="Просмотр кейса">
+        <div class="case-modal__topbar">
+          <p class="case-modal__title">Просмотр сайта кейса</p>
+          <div class="case-modal__actions">
+            <a id="caseExternalLink" class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">
+              Открыть в новой вкладке
+            </a>
+            <button class="btn" type="button" data-close-case>Закрыть</button>
+          </div>
+        </div>
+        <div class="case-modal__frame-wrap">
+          <iframe id="caseFrame" title="Сайт кейса"></iframe>
+        </div>
+        <p class="case-modal__hint">
+          Если сайт не отображается внутри модального окна, он запрещает встраивание.
+          Используй кнопку "Открыть в новой вкладке".
+        </p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
